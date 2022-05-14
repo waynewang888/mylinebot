@@ -5,15 +5,7 @@ from django.conf import settings
 
 from linebot import LineBotApi, WebhookParser
 from linebot.exceptions import InvalidSignatureError, LineBotApiError
-from linebot.models import (
-    MessageEvent,
-    TextSendMessage,
-    TemplateSendMessage,
-    ButtonsTemplate,
-    MessageTemplateAction,
-    PostbackEvent,
-    PostbackTemplateAction
-)
+from linebot.models import MessageEvent, TextSendMessage
 
 line_bot_api = LineBotApi(settings.LINE_CHANNEL_ACCESS_TOKEN)
 parser = WebhookParser(settings.LINE_CHANNEL_SECRET)
@@ -58,13 +50,12 @@ def callback(request):
                 if event.message.text == "Hello bot ":
                     line_bot_api.reply_message(  # 回復傳入的訊息文字
                         event.reply_token,
-                        TextSendMessage(text=vocab.getVoc(123))
+                        TextSendMessage(text = vocab.getVoc(123))
                     )
-
                 else:
-                    line_bot_api.reply_message(  # 回復傳入的訊息文字
+                    line_bot_api.reply_message(
                         event.reply_token,
-                        TextSendMessage(text = "請輸入Hello bot ")
+                        TextSendMessage(text = "請輸入 Hello bot ")
                     )
         return HttpResponse()
     else:

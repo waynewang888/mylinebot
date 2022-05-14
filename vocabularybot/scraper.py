@@ -19,3 +19,4 @@ class vocab():
             vocn += 1
 
         return word
+print(vocab.getVoc(123))
