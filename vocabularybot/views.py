@@ -41,6 +41,7 @@ def callback(request):
 
         try:
             events = parser.parse(body, signature)  # 傳入的事件
+            print(events)
         except InvalidSignatureError:
             return HttpResponseForbidden()
         except LineBotApiError:
