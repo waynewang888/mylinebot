@@ -1,6 +1,7 @@
 class vocab():
 
     def getVoc(self):
+        import openpyxl
         import pandas as pd
         import random
         n = []

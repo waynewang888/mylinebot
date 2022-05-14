@@ -13,6 +13,7 @@ parser = WebhookParser(settings.LINE_CHANNEL_SECRET)
 class vocab():
 
     def getVoc(self):
+        import openpyxl
         import pandas as pd
         import random
         n = []
