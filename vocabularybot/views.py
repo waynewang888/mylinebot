@@ -52,7 +52,7 @@ def callback(request):
                 if event.message.text == "Hello bot ":
                     line_bot_api.reply_message(  # 回復傳入的訊息文字
                         event.reply_token,
-                        TextSendMessage(text = "123"))
+                        TextSendMessage(text = "123")
                     )
                 else:
                     line_bot_api.reply_message(
