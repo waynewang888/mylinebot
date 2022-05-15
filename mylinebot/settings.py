@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-b@0v0@&+xpd0d2liid4!j+udy^+(xu@q5h7tya@$)3$6r7_ite
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'voclinebot.herokuapp.com/',
+    'voclinebot.herokuapp.com',
     'b6d4-114-41-48-114.jp.ngrok.io',
 ]
 
