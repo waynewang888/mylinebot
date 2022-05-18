@@ -15,7 +15,7 @@ class vocab():
     def getVoc(self):
         import os
         from django.conf import settings
-        file_ = open(os.path.join(settings.BASE_DIR, "/vocabularybot/啟超的.xlsx"))
+        file_ = open(os.path.join(settings.BASE_DIR, "啟超的.xlsx"))
         import openpyxl
         import pandas as pd
         import random
