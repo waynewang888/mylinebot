@@ -21,7 +21,7 @@ class vocab():
             num = random.randrange(716)
             if num not in n:
                 n.append(num)
-        df = pd.read_excel("C:/Users/wayne/mylinebot/vocabularybot/啟超的.xlsx")
+        df = pd.read_excel("啟超的.xlsx")
 
         new_df = df.iloc[n]
         voclist = new_df.values.tolist()
