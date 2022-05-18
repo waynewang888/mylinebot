@@ -16,7 +16,7 @@ class vocab():
         import os
         from django.conf import settings
         import openpyxl
-        file_ = "./啟超的.xlsx"
+        file_ = "./voc_with_blank.xlsx"
         import pandas as pd
         import random
         n = []
