@@ -13,6 +13,9 @@ parser = WebhookParser(settings.LINE_CHANNEL_SECRET)
 class vocab():
 
     def getVoc(self):
+        import os
+        from django.conf import settings
+        file_ = open(os.path.join(settings.BASE_DIR, "啟超的.xlsx"))
         import openpyxl
         import pandas as pd
         import random
@@ -21,7 +24,7 @@ class vocab():
             num = random.randrange(716)
             if num not in n:
                 n.append(num)
-        df = pd.read_excel("啟超的.xlsx")
+        df = pd.read_excel(file_)
 
         new_df = df.iloc[n]
         voclist = new_df.values.tolist()
