@@ -32,7 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'voclinebot.herokuapp.com',
-    'b6d4-114-41-48-114.jp.ngrok.io',
+    'a98c-114-41-48-114.jp.ngrok.io',
 ]
 
 
