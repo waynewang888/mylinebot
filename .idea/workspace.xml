@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9dd31bd4-15e7-4fc0-a347-6038139ed61a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylinebot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mylinebot/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vocabularybot/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocabularybot/scraper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vocabularybot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocabularybot/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,21 +135,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mylinebot/settings.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mylinebot/settings.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
