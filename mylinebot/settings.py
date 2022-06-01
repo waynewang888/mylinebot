@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os.path
 
-LINE_CHANNEL_ACCESS_TOKEN = 'BIr7zCHaMYNooX3o8pKMRpudmzobaGUXxExOTFsNiXaWPMFVMCq76BA/muhYvHhKVuxESBi+D93eX7yiQRnkIJCLKymUt3nmvljXqREO+smXq3R0zNQ179v8+TELo2t0IDdPzSNCSes4uafokSY1iAdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_ACCESS_TOKEN = '2d39Cr0GTmx/w9mgky4GGhTgS77/vkSbZXwdz9bo5XpsiV26EfxYdepzg8oKnv9Uni7qfFnMV6Y67NtID24eyDtnlTpnUjjreia/XbmkBqIHm5yE4YwOocZshdaq2i5OsOUDFIe/chOoEypEuYKo1AdB04t89/1O/w1cDnyilFU='
 
-LINE_CHANNEL_SECRET = '7da6448e6d644e55da21cd0b31ccc11a'
+LINE_CHANNEL_SECRET = 'd59595c6431fca3b5e86fd2539cfe6af'
 
 from pathlib import Path
 
@@ -32,7 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'voclinebot.herokuapp.com',
-    'a98c-114-41-48-114.jp.ngrok.io',
+    '03b4-111-252-96-76.jp.ngrok.io',
 ]
 
 

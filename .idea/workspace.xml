@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9dd31bd4-15e7-4fc0-a347-6038139ed61a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylinebot/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mylinebot/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocabularybot/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocabularybot/scraper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vocabularybot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocabularybot/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/啟超的.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/課程/110-2/pythonProject/main.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.scraper">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="mylinebot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,5 +137,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mylinebot/settings.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mylinebot/settings.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
