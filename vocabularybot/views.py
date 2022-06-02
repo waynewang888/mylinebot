@@ -162,6 +162,11 @@ def callback(request):
                             )
                         )
                     )
+                if event.message.text not in allowWords:
+                    line_bot_api.reply_message(
+                        event.reply_token,
+                        TextSendMessage(text='請輸入"今日單字"以獲得推薦單字')
+                    )
 
 
             if isinstance(event, PostbackEvent):
