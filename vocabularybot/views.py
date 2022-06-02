@@ -21,10 +21,11 @@ line_bot_api = LineBotApi(settings.LINE_CHANNEL_ACCESS_TOKEN)
 parser = WebhookParser(settings.LINE_CHANNEL_SECRET)
 
 class vocab():
-    voclist = []
-    quizAns = []
-    validQuiz = []
-    def getVoc():
+    voclist = []     # 獲選單字清單
+    quizAns = []     # 測驗解答
+    validQuiz = []   # 候選題目
+
+    def getVoc(): # 從資料庫隨機抽取五個單字並格式化輸出
         import os
         from django.conf import settings
         import openpyxl
@@ -52,7 +53,7 @@ class vocab():
             vocab.validQuiz.append(v)
         return word
 
-    def getQuiz():
+    def getQuiz(): # 從獲選單字隨機不重複出題
         import random
         if len(vocab.validQuiz) > 0:
             quiz = random.choice(vocab.validQuiz)
@@ -66,7 +67,7 @@ class vocab():
 
         return output
 
-    def getAns():
+    def getAns():  # 判斷輸入答案是否正確
         if isinstance(event, MessageEvent):
             if event.message.text == "a":
                 if vocab.quizAns == 1:
@@ -132,7 +133,7 @@ def callback(request):
         body = request.body.decode('utf-8')
 
         try:
-            events = parser.parse(body, signature)  # 傳入的事件
+            events = parser.parse(body, signature)
             print(events)
         except InvalidSignatureError:
             return HttpResponseForbidden()
@@ -140,9 +141,9 @@ def callback(request):
             return HttpResponseBadRequest()
 
         for event in events:
-            if isinstance(event, MessageEvent):  # 如果有訊息事件
+            if isinstance(event, MessageEvent):
                 if event.message.text == "今日單字":
-                    line_bot_api.reply_message(  # 回復傳入的訊息文字
+                    line_bot_api.reply_message(
                         event.reply_token,
                         TemplateSendMessage(
                             alt_text='Buttons template',

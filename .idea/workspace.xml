@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dd31bd4-15e7-4fc0-a347-6038139ed61a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vocabularybot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocabularybot/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
